@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech History</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Header section container -->
+    <!-- <div class="container-fluid"> -->
+       <!-- Header section -->
+       <header class="sticky-top">
+        <!-- Navigations menu -->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <!-- Brand logo -->
+            <a href="#" class="navbar-brand logo-img px-3 col-lg-1"><img src="./images/logo.png" alt="" style="width: 50px;"></a>
+            <!-- Search option -->
+            <div class="search-option col-lg-3">
+                <input type="search" name="searchField" id="searchField" placeholder="Search....">
+                <span class="search-icon" title="Search"><button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button></span>
+            </div>
+            <!-- Collapse control button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMenus" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- Collapsable items -->
+            <div class="collapse navbar-collapse col-lg-7" id="navigationMenus">
+                <ul class="navbar-nav text-center margin-end">
+                    <li class="nav-item"><a class="nav-link text-white links" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white links" href="#ancient">Ancient</a></li>
+                    <li class="nav-item"><a class="nav-link text-white links" href="#histories">Histories</a></li>
+                    <li class="nav-item"><a class="nav-link text-white links" href="#about">About us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white links" href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+       </header>
+    </div>
+
+                <!-- Carousel section -->
+                <div id="carousel-items" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <!-- Button controls -->
+                      <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                            <!-- Carousel elements -->
+                    <div class="carousel-inner">
+                                <!-- First slide -->
+                      <div class="carousel-item active">
+                        <img src="./images/slide1.jpg" class="d-block w-100 slide-img" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="did-you-know mb-3">“Did You Know</h1>
+                          <img src="./images/Slide content image1.jpg" class="slide-content-img mb-3" title="QWERTY Keyboard" alt="QWERTY Keyboard">
+                          <h4 class="text-center mb-4 text-shadow">The QWERTY keyboard can slow your typing speed on the computer.</h4>
+                          <p class="text-shadow">This keyboard was designed to address the jam issues of typewriters. However, the most used letters are not place together on the keyboard.</p>
+                        </div>
+                      </div>
+                                <!-- Second slide -->
+                      <div class="carousel-item">
+                        <img src="./images/slide2.jpg" class="d-block w-100 slide-img" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h1 class="did-you-know mb-3">“Did You Know</h1>
+                          <img src="./images/Slide content image2.jpg" class="slide-content-img mb-md-3 mb-sm-2" title="Alexa" alt="Alexa">
+                          <h4 class="text-center mb-md-4 text-shadow mb-sm-2">Alexa is always listening to your conversations.</h4>
+                          <p class="text-shadow">This probably isn't new to you. Siri has been doing it forever.
+                            Alexa stores your dialogue history in its cloud to help improve your Alexa experience.
+                            But you can review and delete these recordings, either in bulk or individually.
+                            </p>
+                        </div>
+                      </div>   
+                                <!-- Third slide -->
+                      <div class="carousel-item">
+                        <img src="./images/slide3.jpg" class="d-block w-100 slide-img" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h1 class="did-you-know mb-3">“Did You Know</h1>
+                          <img src="./images/Slide content image3.jpg" class="slide-content-img mb-md-3 mb-sm-2" title="Alarm Clock" alt="Alarm Clock">
+                          <h4 class="text-center mb-md-4 text-shadow mb-sm-2">The first alarm clock could only ring at one time.</h4>
+                          <p class="text-shadow">Literally, one time! The first mechanical alarm clock could only ring at 4 a.m. invented by Levi Hutchins in 1787.
+                          It wasn't until 1876 that a wind-up alarm clock was made that could be set for any time.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-items" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-items" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+                  <!-- Main section -->
+            <main class="container-fluid mt-5 bg-light" >
+
+              <!-- Today's Best histroy section -->
+              <section id="todayBest">
+                  <h1 class="text-center bg-light text-uppercase letter-spacing-3">Today's Top</h1><hr class="hr">
+                  <!--Top history -->
+                <div class="best-history-cards mt-4 p-3 row">
+
+                    <!-- History one -->
+                  <div class="card col-md-6 card-border">
+                        <!-- Card body -->
+                      <div class="card-body card-size">
+                            <!-- Card Image -->
+                          <img class="card-img-size" src="./images/card images/Top history/img1.jpg" alt="World First Camera">
+                                    <!-- Card Title -->
+                           <h3 class="mt-2 text-center">Camera (1816)</h3><hr class="hr">
+                                            <!-- Card body text -->
+                          <p class="card-text mt-3">"Cameras we use today are not invented by a single person but many great minds contributed to this long and iterative process. Camera Obscura was the earliest camera that was used to study optics i.e. how light can be passed through a tiny hole to project an image onto an opposite flat screen. Arab scholar, Ibn Al-Haytham was the creator of Obscura's which gave birth to modern cameras and photography."
+                                                    <!-- Card Collapse link -->
+                            <a href="#collapseItem1" data-bs-toggle="collapse" id="cardCollapseLink1">Continue Reading...</a>
+                                                              <!-- Collapse item inside element -->
+                                <p class="card-text collapse" id="collapseItem1">Before the invention of the camera in 1816, there was no right way to preserve the image. Joseph Nicephore Niepce clicked the first photograph and called the process “heliography”. As technology was progressing, practical photography was started by Louis Daguerre in 1829 and colored photography in 1940. Digital cameras that utilized the charge-coupled device image sensor were developed by Steven J. Sasson in 1975. These are the most sold cameras in the present time and incorporated in devices like mobile phones, laptops, vehicles, etc.</p>
+                        </p>
+                      </div>
+                  </div>
+
+                     <!-- History Two -->
+                     <div class="card col-md-6 card-border">
+                      <!-- Card body -->
+                    <div class="card-body card-size">
+                          <!-- Card Image -->
+                        <img class="card-img-size" src="./images/card images/Top history/img2.jpg" alt="Internet">
+                                  <!-- Card Title -->
+                         <h3 class="mt-2 text-center">Internet (1960s)</h3><hr class="hr">
+                                          <!-- Card body text -->
+                        <p class="card-text mt-3">"Internet is a global system of interconnected computer networks of local to universal scope linked by an extensive array of electronic, wireless, and optical networking technologies. It is a very powerful invention as it carries a broad range of information resources and services that are accessible to the vast majority of people daily. It is impossible to credit a single person for the invention of such an expansive technology as it has evolved and new features were added constantly.
+                                                  <!-- Card Collapse link -->
+                          <a href="#collapseItem2" data-bs-toggle="collapse" id="cardCollapseLink2">Continue Reading...</a>
+                                                            <!-- Collapse item inside element -->
+                              <p class="card-text collapse" id="collapseItem2">The department of US defense-first developed the “galactic network” of computers called ARPANET for communication in the 1960's cold war. With the invention of the World Wide Web in 1989, the internet shrank the world like nothing else and made it famous among the public. Today more than 4.7 billion people use the internet daily for businesses, social networking, browsing information, communication, navigation, and many other purposes.</p>
+                      </p>
+                    </div>
+                </div>
+
+                <!-- History Three -->
+                <div class="card col-md-6 card-border">
+                  <!-- Card body -->
+                <div class="card-body card-size">
+                      <!-- Card Image -->
+                    <img class="card-img-size" src="./images/card images/Top history/img3.jpg" alt="Barcode">
+                              <!-- Card Title -->
+                     <h3 class="mt-2 text-center">Barcode (1974)</h3><hr class="hr">
+                                      <!-- Card body text -->
+                    <p class="card-text mt-3">Scanning of the first item marked with the barcode happened on June 26, 1974, and soon it became a commercial success. But do you know that it was way before when the barcode was actually invented? Yes. Although the first barcdidn’tdn’t look like it does today, it originated in 1948 by two university students, Norman J Woodland and Bernard Silver in Miami.
+                      <a href="#collapseItem3" data-bs-toggle="collapse" id="cardCollapseLink3">Continue Reading...</a>
+                                                        <!-- Collapse item inside element -->
+                          <p class="card-text collapse" id="collapseItem3">Woodland drew some thick, narrow lines in the sand at the beach, made them circular, and got a patent for this idea in 1952 but sadly there was no technology to process this code. Twenty years later when researchers came across an appropriate technology, they decided to use itbull'sll's eye design. After modifying this barcode into a rectangular design that we use today, they started implementing it commercially in the 1980s and since then, the industry has expanded rapidly for scanning and tracking applications.</p>
+                  </p>
+                </div>
+            </div>
+
+            <!-- History Four -->
+            <div class="card col-md-6 card-border">
+              <!-- Card body -->
+            <div class="card-body card-size">
+                  <!-- Card Image -->
+                <img class="card-img-size" src="./images/card images/Top history/img4.jpg" alt="PlayStation">
+                          <!-- Card Title -->
+                 <h3 class="mt-2 text-center">PlayStation (1994)</h3><hr class="hr">
+                                  <!-- Card body text -->
+                <p class="card-text mt-3">The history of the PlayStation dates back to 1988 when Sony and Nintendo started to work together to develop the home video gam “, “the Super D” sc”. Nintendo, who was dominating the computer gaming industry at that time parted ways with Sony and joined hands with Philips. 
+                  <a href="#collapseItem4" data-bs-toggle="collapse" id="cardCollapseLink4">Continue Reading...</a>
+                                                    <!-- Collapse item inside element -->
+                      <p class="card-text collapse" id="collapseItem4"> Sony, in 1991 introduced an improved version of the super di “c “Sony Playstat” on” as a multi-purpose entertainment unit. The new Sony Playstation X (PSX) was released in 1994 in Japan that played CD-ROM-based games making it the best-selling game console. Next year, it was introduced to America on a commercial level and started an era of emerging technology in the gaming industry.</p>
+              </p>
+            </div>
+          </div>      
+                </div>
+              </section>
+
+                <!-- Ancient tech section -->
+            <section id="ancient" class="mt-5">
+                        <!-- Ancient tech heading -->
+                <h1 class="text-center bg-light text-uppercase letter-spacing-3">Ancient Tech</h1><hr class="hr">
+                                  <!-- Ancient technologies -->
+                    <div class="ancient-techs   row text-black">
+
+                                          <!-- Ancient tech one -->
+                            <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Airplane (1903)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/airplane.png" alt="Airplane">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">The airplane is undoubtedly the most significant invention of the 20th century. Not only it connected continents but also shortened travel time and showed us the hidden and spectacular viewpoint of Earth. Since its revolutionary invention in 1903 by the Wright brothers, traveling and transport across countries has become a child's play. It laid the foundation of aviation taking it to the next level by developing jet aircraft and space rockets. It has made the world smaller and accessible to everyone and helps in import and export products from all over the world. Airplane experience has been changed a lot over the years by introducing perks like comfortable seating, wifi, online bookings and check-ins, extra baggage allowance, etc. It still has ways to go as aviation is continuously expanding</p>
+                                </div>
+                            </div>
+
+
+                                                     <!-- Ancient tech Two -->
+                            <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Electric Cars (1828)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/electric car.png" alt="Electric Car">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">Did you know that electric cars have been around since the 1800s? Yes, it's right. Although they are considered as the future of motoring, they are not a new concept and have a long and storied history. Around 1832, Scottish inventor Robert Anderson designed the first electric-powered carriage with a non-chargeable battery. A few decades later, the first practical electric car was built by an English inventor “Thomas Parker” in 1884. The duration of the popularity of electric cars was from 1899 to 1908 when Henry Ford invented the “ford model t” that runs on combustible fuels and was a cheaper alternative. The 90s was a key turning point for modern electric cars and after making several attempts, a silicon valley startup “Tesla Motors” appeared and announced the production of electric sports cars with a range of 200 miles. In 2010, Nissan LEAF (the most popular electric car) was unveiled and until 2014, consumers had a multitude of choices for electric cars available in the market. In this age, electric cars are the best substitute for fuel vehicles to lower the carbon pollution that is increasing global warming every passing day.</p>
+                                </div>
+                            </div>
+
+
+
+                                      
+                                          <!-- Ancient tech Three -->
+                            <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Telegraph (1844)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/Telegraph.png" alt="Telegraph">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">Revolution in long-distance communication began with the invention of the telegraph in the 1840s by Samuel Morse. Before this, messages were sent through the mail that used to take weeks. On May 24, 1844, Morse sent his first message “What hath God wrought” through a telegraph from Washington to Baltimore that broke new grounds in the field of telecommunication. This was the first time electricity was used to communicate over distance by putting wires between the places. The first design of the telegraph used the electric magnet to push a pin-up and down that would make impressions onto a paper tape which would then be decoded to get the message. Commercial applications came into sight with the development of a unified system of telegraph stations. The invention of the telegraph laid the foundation of modern communication technologies like the radio, the telephone, etc.</p>
+                                </div>
+                            </div>
+
+
+
+                                            <!-- Ancient tech Four -->
+                              <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Telephone (1876)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/telephone.png" alt="Telephone">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">The telephone is the most profound invention in the world of communication. It all started in the 1870s when Graham Bell executed long-distance transmission of the human voice through electrical signals. Initially, people used to communicate through direct lines across a short distance only. It was only after the invention of the transistor in 1947 that lightweight microcircuitry was introduced. Over time, several smart features like automatic redialing, audio quality, call number details, wireless transmission, and clear visual display were added that supplemented the basic design. It took years for the evolution of the telephone until it became the modern-day digital instrument. With the invention of the telephone, the businesses and social activities of people have become global.</p>
+                                </div>
+                            </div>
+                            
+
+
+
+
+                                                 <!-- Ancient tech Five -->
+                              <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Radio (1896)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/radio.png" alt="Radio">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">Radio technology started as “wireless telegraphy” because it merged the technologies of telephone and telegraph. When the radio waves were discovered, Guglielmo Marconi began experimenting with the transmission of wireless signals and submitted his first patent in 1896. Many industrial nations started their radio broadcasts by the mid-90s which was the golden period of the radio. People could listen to music, sports, news, and other programs through the transmission of electromagnetic waves. It was an important invention because it broadcasted real-time information and provided live updates of the events happening around the world. Radio has massive impacts on the world as it was the original social medium away before social media emerged.</p>
+                                </div>
+                            </div>
+
+
+
+
+                                      
+                                                 <!-- Ancient tech Six -->
+                              <div class="ancient-tech col-md-5 ancient-card-margin p-4">
+                                                <!-- Ancient tech heading -->
+                                    <h1 class="mt-4 text-center" >Electronic Television (1927)</h1><hr class="hr">
+                                                      <!-- Ancient tech image -->
+                                        <img class="img-fluid mb-3" src="./images/card images/Ancient history/telephone.png" alt="Electric Television">
+                                                              <!-- Ancinet tech paragraph -->
+                                <div class="ancient-tech-paragraph">
+                                      <p class="ancient-text-content">Although this technology that allowed people to see moving images didn’t become available until the 1920s, it influenced people’s lives for just over a few decades. First, all-electronic TV was invented in 1927 by a 21-year-old inventor “Philo T Farnsworth”, which he called the image dissector. He transmitted the first picture by rotating a beam of electrons onto a square piece of painted glass by 90 degrees. Television broadcasting began in 1928 and has co-existed for so many years, electronic TV sets eventually started to replace mechanical systems. The 1950s proved to be the golden age of television and color technology in TVs got popular in the 1960s. The era of high-definition TVs started around 1980 and created a heightened sense of realism through its 3D experience. With the invention of online streaming services, it is yet to be seen if traditional TV will survive or not.</p>
+                                </div>
+                              </div>
+                    </div>
+                  </section>
+
+
+    
+      <!-- Remaining history section -->
+      <section id="histories" class="mt-5 mb-5">
+          <div class="histories container">
+              <!-- Histories heading -->
+            <h1 class="text-center bg-light text-uppercase letter-spacing-3">Histories</h1><hr class="hr">
+
+                  <!-- History One -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">1. LCD (1968)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/LCD-1968-768x384.jpg.webp" alt="LCD">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Liquid crystals, a form of matter, have been used in all kinds of display devices since 1968 when the first liquid crystal display (LCD) was created. This invention was a turning point in transforming materials from a scientific interest to technological applications. Gradually, manufacturers did improvements and variations and LCDs grew bigger, and full-motion, flat screens came to light. The 1990s was the era of breakthroughs in LCD technology when researchers improved contrast and viewing angles and brought costs down. There are still many areas that need to be explored such as flexible and 3D displays and continuous manufacturing of glass panels. This system consumes low power and has applications in watches, calculators, instrument panels, and consumer electronic devices.</p>
+              </div>
+              
+
+                          <!-- History Two -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">2. Email (1971)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Email-1971-768x384.jpg.webp" alt="Email">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">The invention of electronic mail in 1971 brought the revolution in electronic communication and changed the way people communicate with each other. The email system is a method through which digital messages are transmitted and received in the form of text, graphics, sound, and animations. Ray Tomlinson developed email by usARPANET’sET’s network and it was the first practical application for new internet users. In early times, it was necessary for author and recipient both to be online at the same time whtoday’say’s email systems need a brief connection just to send or receive messages. At the turn of the 21st century, email has become a means of communication in businesses, companies, and the education sector. With time, there have been several advancements such as automated messages and replies, alerts, save and sort features, etc.</p>
+              </div>
+
+
+                                   <!-- History Three -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">3. Mobile Phone (1973)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Mobile-phone-1973-768x384.jpg.webp" alt="Mobile Phone">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">The most used communication tooltoday’say’s time is the mobile phone that has contracted and concise the world at a tip. Production and demand for cell phones have been increasing day by day due to great advances in technology. The first-ever mobile phone call was made 48 years ago by Martin Cooper who laid the foundation of wireless communication. Though it took a whole decade to reach public users and two more decades to overtake landlines, they soon became popular and widely available. Mobile phones not only help people communicate with each other but also are a medium of entertainment, conducting business, photography, online banking, etc. Nowadays, people are hooked on their mobile phones and spend most of their time browsing social media or texting and talking to each other. It has become the anchor of technology it’sit’s still innovating.</p>
+              </div>
+              
+
+
+                                              <!-- History Four -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">4. Apple I (1976)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Apple-I-1976-768x384.jpg.webp" alt="Apple I">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Co-founders of Apple Inc. Steve Wozniak and Steve Jobs sold their first self-assembled Apple computer or Apple I in 1976 that kicked everything off. They retailed it at $666.66 and a total of 200 ApI’s I’s were manufactured and sold. Since then, the invention of all Apple devices including MacBook, iPad, iPhone, and iPod has become a rich history. Apple made sure that their computers become an important part of everyday life and open the doors to the digital era. It came out as a single motherboard with a cassette interface, a detached keyboard kit, and a video monitor enclosed in a wooden case. Apple II and Apple III were released in the years 1977 and 1980 before IBM released its first personal computer.</p>
+              </div>
+
+
+
+                                                  <!-- History Five -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">5. GPS (1978)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/GPS-1973-768x384.jpg.webp" alt="GPS">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Have you ever gotten lost somewhere and thought that if there was no GPS what would you have done in that situation? Yes, this shows how much GPS (Global Positioning System) has become an indispensable part of our liLet’set’s get back to where it all started. It was the year 1960 when the first global satellite navigation system for military and commercial users cal “ed “TRA” SIT” was developed. After that technological advancements were going on and the first satellite of the Navstar GPS was launched in February 1978. It continued to improve throughout the nineties and finally appeared in cell phones in 1999 and later in automobiles. Today, they are used to find routes to anywhere on this Earth and managed worldwide by control stations.</p>
+              </div>
+              
+
+
+                                                           <!-- History Six -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">6. IBM PC (1981)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/IBM-PC-1981-768x384.jpg.webp" alt="IBM PC">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">The first IBM personal computer model 5150 entered the market in 1981. At that time the IBM brand was already recognized and with the massive marketing campaign, the growth of personal computers occurred on a broad basis. It was designed with a 4.77 MHz Intel 8088 microprocessor Microsoft’sft’s MS-DOS operating system that made it comparatively faster than rival machines and greater memory capacity. The manufacturing strategy was to create simpler, more functional, and portable computers. With the emergence of IBM computers, a vast ecosystem of technology was created.</p>
+              </div>
+
+
+
+                                          <!-- History Seven -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">7. CD-ROM (1984)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/CD-ROM-1984-768x384.jpg.webp" alt="CD ROM">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">A Japanese company named Denon developed the CD-ROM in 1982 and introduced this technology with Sony at a computer show in 1984. Sony and Philips took the credit for the inventions of CD and CD-ROM, misleading people into believing Sony and Philips as visionary. While their only contribution was to bring the system to market. It is a type of computer memory that can store data of about 700 floppy disks. At first, it was designed to store music and video files only but then the format was modified to also store binary data. As the technology is advancing, it is becoming more compatible and storage capacity has increased.</p>
+              </div>
+
+
+
+                                                       <!-- History Eight -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">8. Microsoft Windows (1985)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Microsoft-windows-1985-768x384.jpg.webp" alt="Microsoft Windows">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">While taking a look back at the history of Microsoft Windows, we know that they have flourished through the ages to reach the modern version. Windows OS refers to a series of operating systems developed by Microsoft Corporation. Microsoft initiated the trials to develop windows in 1981 and used the na “e “Interlace Mana” er” for it. MS-DOS was the standard system for IBM-compatible computers. Bill Gates announced Microsoft Windows in 1983 while the first versi “n “Microsoft Windows” .0″ was introduced in 1985. Since then, it has seen nine major versions and Windows 7 was released as the latest version in the 25-year-old line of Windows Operating Systems.</p>
+              </div>
+
+
+
+
+                                                      <!-- History Nine -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">10.  USB (1996)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/USB-1996-768x384.jpg.webp" alt="USB">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">In the old days, transferring data into your computer needed plugging in a zoo of cables, a connector, or a serial port. When USB was released in 1996, the idea was right there in its na “e “Universal Serial” us” which means as soon as you plug the device in the computer it works. Though Ajay Butt from Intel started its development in 1994 and released in 1996 the technolodidn’tn’t take off until the first iMac was released as a USB-only machine in 1998. It was faster than older serial ports as the data transfer rates were up to 12Mb/sec. With the advancement in technology, a new cable desi “n “Typ” C” is in use that is also reversible along with type A and type B.</p>
+              </div>
+
+
+
+
+                      
+                                                      <!-- History Ten -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">11. Wifi (1997)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Wifi-1997-768x384.jpg.webp" alt="Wifi">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Wifi is certainly the most popular expression used by people around the globe but who brings this technology to the world is an interesting story. Hollywood actre “s “Hedy Lam” rr” filed for frequency-hopping technology in 1941 that paved the way for the secured wifi that it is today. There are many patents linked with this technology but Vic Hayes is call “d “the father of w” fi” because he established standards to make wifi feasible. The first wifi system was the 802.11 standard that was accepted in 1997. Network cables were no longer needed to surf the internet at work or home and with a router or a dongle, the internet could be used wirelessly. Over the years, wifi technology progressed real quick and found its way into our computers, mobile phones, and even cars.</p>
+              </div>
+
+
+
+                                                      <!-- History Eleven -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">12.  Bluetooth Version 1.0 (1999)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Bluetooth-version-1.0-1999-768x384.jpg.webp" alt="Bluetooth">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Bluetooth is the most popular wireless communication technology that has become indispensable to be used in many electronic devices these days. Jaap C. Haartsen is considered the sole inventor of Bluetooth, who released its first version on July 26, 1999. It was developed to build a connection between devices, and portable PCs or laptops over short distances. Bluetooth can link two enabled devices without needing any additional network equipment like rotors or modems which is why it was chosen to be used in mobile phones for transferring data. In recent years, Bluetooth has transformed into the Bluetooth smart system and expanded to link earphones, earbuds, wireless speakers, and hearing aids to audio sources.</p>
+              </div>
+
+
+
+                                                          <!-- History Twelve -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">13. Google Maps (2005)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Google-Maps-2005-768x384.jpg.webp" alt="Google Maps">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Developed a decade ago, Google maps revolutionized the world of digital maps having more than a billion users worldwide. Two Denmark-born but Sydney-based developers co-founded the startup mapping company nam “d “Where 2 technolog” es”. In 2004, they sold the company to Google, which later turned it into Google Maps, which was the dynamic online map with turn-by-turn driving instructions. A few years later, Google added 360 degrees street-level views of houses, roads, and landmarks, and to this day, Google Maps remains the standard. Digital mapping improves as the world evolves, and so does Google Maps, so no one can say where we go from here.</p>
+              </div>
+
+
+
+
+                                                    <!-- History Thirteen -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">14. iPhone (2007)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/iPhone-2007-768x384.jpg.webp" alt="iPhone">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Though wasn't the first smartphone, the iPhone was the revolutionary and best-selling product since its arrival in 2007 and was literally five years ahead of any other cell phone. After the iPhone, all mobile phone companies started copying its design, and Apple CEO Steve Jobs has sold 1.5 billion of them until now. Armed with powerful features like iconic touch-screen technology, the lithium battery, the internet, and the WWW, it squeezed more functionality into one device. Apple also launched its online app store in 2008 that enabled people to download different software applications. Since then, several breakthroughs have happened, and Apple went on to over 29 updated models of the iPhone.</p>
+              </div>
+
+
+
+
+                                                                  <!-- History Fourteen -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">14. Android OS (2007)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/Android-OS-2007-768x384.jpg.webp" alt="Android OS">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">Android OS Google's leading mobile operating system that primarily runs on smartphones and tablets. Based upon the Linux kernel and Graphical User Interface, it has several end-user applications that can be easily downloaded from the system. It was developed by Android, Inc. to run on relatively inexpensive handsets before Google acquired it in 2005. Google made the public beta version of Android 1.0 commercially available in 2007, although the product hit the marketplace in 2008. Since then, developers are using this technology to develop mobile apps which are sold through Google Play, an app store.</p>
+              </div>
+
+
+
+                                                                 <!-- History Fifteen -->
+              <div class="history mt-5 text-center">
+                          <!-- History heading -->
+                  <h1 class="mb-3">15. 5G (2019)</h1>
+                                  <!-- History image -->
+                      <img class="img-fluid" src="./images/History Image/5G-2019-768x384.jpg.webp" alt="5G">
+                                          <!-- History paragraph -->
+                          <p class="mt-3 history-text">5G is the fifth-generation wireless network that is designed to connect everyone and everything virtually, including machines, objects, and devices. In April 2019, 5G mobile service was introduced in parts of Chicago and Minneapolis, enabling the customers to connect to the network. It is meant to deliver peak data speeds, ultra-low latency, massive network capacity, increased availability, and next-generation user experiences. Qualcomm has the biggest role in inventing foundation technologies that made the 5G next wireless standard. It is the future of technology and will impact almost every industry.</p>
+              </div>
+          </div>
+      </section>
+
+
+      <!-- About us section -->
+      <section id="about" class="mt-5 text-center bg-info p-3">
+              <!-- About heading -->
+            <h1 class="text-center  text-uppercase letter-spacing-3">About us</h1><hr class="hr">
+            <div class="about-us-paragraph w-75 m-auto  p-3">
+                "Tech History" is a history based website where we talk about various technologies from the ancient period upto this time period. Our goal is to cover as many tech history as possible in order to satisfy people's curiosity regarding the history of various technologies. You can also send your own history to us using the form below. Feel free to be the part of the find of ancient technology with "Tech History".
+            </div>
+            <button class="btn btn-indigo mt-3" id="authorButton">Word From The Developer</button>
+      </section>
+
+
+
+                <!-- About author popup -->
+    <div class="author-popup-box" id="popUpBox">
+                <!-- Popup inside content -->
+          <div class="popup-content">
+              <div class="close-button">
+                  <button id="closeButton" title="Close">&times;</button>
+              </div>
+                            <!-- Author image -->
+              <div class="author-img-container">
+                  <img class="author-img rounded-circle" src="./images/Developer.png" alt="Shihab Hasan">
+                  <p class="author-words p-5">"Hi there, this is "Shihab Hasan". I am a front-end web developer.<br>This is my first mega project. I have a great curiosity about technology and old things from my childhood.<br>
+                  So, this the the reason, I created my first real mega project about this topic.<br>I am still learning. So, here you will see a lot of questionable design choices and weird bug all the the page.<br>Please take these politely and maybe if you are kind enough give me some advice on my social media. They will be linked down at the webpage footer."<br>
+                <span class="author-name">-Shihab Hasan</span></p>
+              </div>                
+          </div>
+    </div>
+
+
+
+        <!-- Contact section -->
+
+      <section id="contact" class="mt-5">
+              <!-- Contact heading -->
+          <h1 class="text-center bg-light text-uppercase letter-spacing-3 mt-5">Send us a history</h1><hr class="hr">
+                    <!-- Form section -->
+                <form action="https://formsubmit.co/3ad284f4e1ef378974c324c02ff1fb1c" method="POST" enctype="multipart/form-data" class="w-md-50 m-auto mt-5 p-2" id="formSubmit">
+                            <!-- Name -->
+                    <label for="name" class="form-label">Your Name*: </label>
+                    <input type="text" name="Name" id="name" class="form-control" required><br>
+                                    <!-- User email -->
+                    <label for="email" class="form-label">Your E-mail*: </label>
+                    <input type="email" name="Email" id="email" class="form-control" required><br>
+                                          <!-- Input area -->
+                    <label for="history" class="form-label">Your History*: </label><br>
+                    <textarea name="History" id="history" cols="30" rows="10" class="form-label" required></textarea><br>
+                                                  <!-- Attachment -->
+                    <label for="attachment" class="form-label">Attachment: </label>
+                    <input type="file" name="attachment" id="attachment" class="form-control" accept="image/png, image/jpeg"><span class="form-text">
+                      *File size must not exceed 5MB!
+                    </span><br>
+                                                            <!-- Configaration-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New History Arrived!">
+                                                                  <!-- Submit button -->
+                    <button type="submit" id="submitButton" class="form-control btn btn-primary mt-4">Send</button>
+                </form>
+      </section>
+</main>
+
+
+
+          <!-- Footer section -->
+    <footer>
+         <!-- Social media -->
+         <h4 class="footer-heading mt-5">Find me on</h4>
+         <ul class="list">
+              <li class="list-item"><a target="_blank" href="https://www.facebook.com/Shihab.Hasan001/"><i title="Facebook" class="fa-brands fa-facebook fa-2x"></i></a></li>
+              <li class="list-item"><a target="_blank" href="https://twitter.com/ShihabH53501738"><i title="Twitter" class="fa-brands fa-twitter fa-2x"></i></a></li>
+              <li class="list-item"><a target="_blank" href="https://www.instagram.com/shihabhasan36/"><i title="Instagram" class="fa-brands fa-instagram fa-2x"></i></a></li>
+              <li class="list-item"><a target="_blank" href="https://github.com/Shihab8902"><i title="GitHub" class="fa-brands fa-github fa-2x"></i></a></li>
+              <li class="list-item"><a target="_blank" href="mailto:shihabbd018@gmail.com"><i title="Email" class="fa-solid fa-envelope fa-2x"></i></a></li>
+         </ul>
+              <!-- Copyright message -->
+              <p class="copyright">Copyright &copy; 2023 Tech History</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+    <!-- Bootstrap 5 JavaScript cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+</html>

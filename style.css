@@ -1,0 +1,316 @@
+/* Reset code */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Header section design */
+.links{
+    margin: 7px 14px;
+}
+.links:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+/* Search option design */
+.search-option>input{
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    color: white;
+}
+.search-option>input::placeholder{
+    color: white;
+}
+#searchBtn{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+#searchBtn:hover{
+    transform: scale(1.2);
+}
+/* Image slider design */
+.slide-img{
+    height: 510px;
+}
+.slide-content-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px white, -2px -2px 3px white;
+}
+.slide-content-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 4px 4px 6px white, -4px -4px 6px white;
+    cursor: pointer;
+}
+.did-you-know{
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-style: italic;
+}
+.card-border{
+    border:2px dotted black;
+}
+/* Utilitis class */
+.text-red{
+    color: red;
+}
+.text-black{
+    color: black;
+}
+.letter-spacing-3{
+    letter-spacing: 3px;
+}
+.hr{
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    opacity: 1;
+}
+.text-left{
+    text-align: left;
+}
+/* Top history design */
+.card-size{
+    width: 100%;
+    height: 550px;
+    overflow-y: auto;
+}
+.card-size::-webkit-scrollbar {
+    display: none;
+  }
+.card-img-size{
+    width: 100%;
+    height: 250px;
+}
+.card-shadow{
+    box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+}
+.bg-card-white{
+    background-color: #CFF5E7;
+}
+/* Ancient tech designs */
+.ancient-techs{
+    font-family: 'Marck Script', cursive;
+    width: 100%;
+    background-image: url("./images/Ancient\ section\ background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.ancient-tech{
+    background-image: url("./images/ancinet\ bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+}
+.ancient-card-margin{
+    margin: 30px 0px;
+}
+.ancient-tech-paragraph{
+    height: 300px;
+    overflow-y: auto;
+}
+.ancient-text-content{
+    font-size: 20px;
+    padding: 0px 30px;
+}
+.ancient-tech-paragraph::-webkit-scrollbar{
+    display: none;
+}
+/* Histories design */
+.history-text{
+    font-size: 20px;
+}
+/* About section design */
+.about-us-paragraph{
+    font-size: 20px;
+}
+.btn-indigo{
+    background-color: orangered;
+    color: white;
+}
+.btn-indigo:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black
+}
+/* Author word popup */
+.author-popup-box{
+    display: none;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.popup-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(98, 7, 163);
+    position: fixed;
+    display: block;
+    top: 50px;
+    z-index: 1;
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid rgb(11, 220, 11);
+    border-top: 3px solid rgb(11, 220, 11);
+}
+#closeButton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 50px;
+}
+.author-img-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+.author-img{
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+}
+.author-word-container{
+    position: absolute;
+}
+.author-words{
+    color: white;
+}
+.author-name{
+    float: right;
+    margin-top: 20px;
+    font-style: italic;
+}
+/* Contact form design */
+#history{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* Footer section design */
+footer{
+    background-color: #01014b;
+    padding-bottom: 15px;
+    height: 120px;
+}
+.footer-heading{
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: center;
+}
+.list-item{
+    float: left;
+    list-style-type: none;
+}
+.list-item a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 18px;
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+/* For tablet */
+@media only screen and (min-width: 600px) {
+    .ancient-tech-paragraph{
+        height: 160px;
+        overflow-y: auto;
+    }
+    .popup-content{
+        height: 80%;
+        width: 90%;
+        top: 105px;
+    }
+    #closeButton{
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    #formSubmit{
+        width: 50%;
+    }
+    footer{
+        padding-bottom: 10px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .margin-end{
+        margin-left: 290px;
+    }
+    .slide-img{
+        height: 521px;
+    }
+    .did-you-know{
+        font-size: 6rem;
+        text-shadow: 2px 2px 3px black;
+        color: white;
+        font-style: italic;
+    }
+    .did-you-know{
+        font-size: 3rem;
+        text-shadow: 2px 2px 3px black;
+        color: white;
+        font-style: italic;
+    }
+    .ancient-card-margin{
+        margin: 20px 49px;
+    }
+    .ancient-tech-paragraph{
+        height: 220px;
+        overflow-y: auto;
+    }
+    .popup-content{
+        height: 80%;
+        width: 60%;
+        top: 102px;
+    }
+    #closeButton{
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+
+}
